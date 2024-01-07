@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>SPEED</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="car">
+    <img src="./images/car 1.jpeg">
+</div>
+    <h1>Slow down, speed kills</h1>
+    <p>Traffic lights ahead</p>
+    <script>
+let speed = prompt("Enter the speed of the car (in km/h):");
+if (speed === null || speed === "") {
+  alert("Invalid input. Please enter a valid speed.");
+} else {
+  let speedValue = parseFloat(speed);
+  if (!isNaN(speedValue)) {
+    const speedLimit = 70;
+    const demeritPointsPerKmUnit = 5;
+    const pointsThreshold = 12;
+    let demeritPoints = Math.floor((speedValue - speedLimit) / demeritPointsPerKmUnit);
+    if (demeritPoints > pointsThreshold) {
+      alert("License suspended");
+    } else if (demeritPoints > 0) {
+      alert(`Points: ${demeritPoints}`);
+    } else {
+      alert("Ok");
+    }
+  } else {
+    alert("Invalid input. Please enter a valid speed.");
+  }
+}
+    </script>
+</body>
+</html>

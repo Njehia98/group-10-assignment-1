@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>SALARY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="imagecontainer">
+        <img src="./images/BOOKS.jpeg">
+    </div>
+    <h1>These are your resullts</h1>
+    <p> Education is life</p>
+<script>
+let userMarks = prompt("Enter student marks (0-100):");
+if (userMarks === null || userMarks === "") {
+  alert("Invalid input. Please enter a valid number.");
+} else {
+  let marks = parseFloat(userMarks);
+  if (!isNaN(marks) && marks >= 0 && marks <= 100) {
+    let grade;
+    if (marks > 79) {
+      grade = " Congrats you got an A";
+    } else if (marks >= 60 && marks <= 79) {
+      grade = "Well done you got a B";
+    } else if (marks >= 50 && marks <= 59) {
+      grade = "Pull up your socks you got a C";
+    } else if (marks >= 40 && marks <= 49) {
+      grade = "Kimekuramba you got a D";
+    } else {
+      grade = "Eeeeh i wanda you got an E";
+    }
+    alert(`Student Grade: ${grade}`);
+  } else {
+    alert("Invalid input. Please enter a valid number between 0 and 100.");
+  }
+}
+</script>
+</body>
+</html>

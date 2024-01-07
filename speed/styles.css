@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+h1{
+    text-align: center;
+    text-decoration: wavy;
+}
+p{
+    text-align: center;
+    text-decoration: double;
+}
+.car{
+    text-align: center;
+}
