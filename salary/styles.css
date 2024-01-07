@@ -1,0 +1,16 @@
+body{
+    background-color: cornflowerblue;
+    margin:0;
+
+}
+h1{
+    text-align: center;
+    text-decoration: wavy;
+}
+p{
+    text-align: center;
+    text-decoration: double;
+}
+.salary{
+    text-align: center;
+}
